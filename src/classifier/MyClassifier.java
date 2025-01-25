@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 public class MyClassifier {
 	public static void main(String[] args) {
 		// INTIAL SETUPS
+		String prefix = "";
 		String input_path = null;
 		String output_dir = null;
 		boolean stats=false, fullstats=false, canAppend=false;
@@ -37,6 +38,9 @@ public class MyClassifier {
 				break;
 			case "-f":
 				fullstats=true;	//allow more stats
+				break;
+			case "-p":
+				prefix=args[++i];
 				break;
 			default:
 				System.out.println("invalid specifier");
@@ -61,9 +65,9 @@ public class MyClassifier {
 		
 //		============= if Everything is okay, then proceed ============
 		// paths for use
-		String strings_path = output_dir+"/result_strings.txt";
-		String integers_path = output_dir+"/result_integers.txt";
-		String floats_path  = output_dir+"/result_floats.txt";
+		String strings_path = output_dir+"/"+prefix+"result_strings.txt";
+		String integers_path = output_dir+"/"+prefix+"result_integers.txt";
+		String floats_path  = output_dir+"/"+prefix+"result_floats.txt";
 		
 		// Open the reading and writing operations as 'with' so it auto clears
 		try (	
