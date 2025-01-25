@@ -1,6 +1,6 @@
-Нормальная форма числа с плавающей запятой
-Long
 Lorem ipsum dolor sit arnet
 Пример
 consectetur adipiscing
 тестовое задание
+Нормальная форма числа с плавающей запятой
+Long
