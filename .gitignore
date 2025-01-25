@@ -1,0 +1,26 @@
+# Ignore the following:
+# Maven build output
+/target/
+
+# Eclipse project files
+/.classpath
+/.project
+/.settings/
+
+# local Maven repository
+/.m2/
+
+# compiled Java classes
+/bin/
+*.class
+
+# Ignore IDE specific files
+*.iml
+.idea/
+
+# log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
